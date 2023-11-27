@@ -14,6 +14,7 @@ csv_data = {
     "clients" : pd.read_csv("clients.csv"),
     "prices": pd.read_csv("prices.csv")
 }
+print("TYPE : " , type(csv_data['clients']))
 
 @app.route('/get_clients', methods= ['POST'])
 def get_clients():
@@ -42,7 +43,7 @@ def add_client():
         return jsonify({'error' : 'No row provided'})
     
     new_client = data['new_row']
-    
+
     #lire le fichier csv et y ajouter le nouveau client
     csv_data['clients'] = csv_data['clients'].append(new_client, ignore_index=True)
 

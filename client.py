@@ -9,7 +9,7 @@ def request_clients():
     if response.status_code == 200:
         data = response.json()
         table_data = json.loads(data['table_data'])
-
+        
         print("Liste Clients : \n")
 
         for row in table_data:

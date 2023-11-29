@@ -1,6 +1,6 @@
-id,name,age
-1,John,25
-2,Jane,30
-3,Bob,22
-5,Eva,22
-7,Sophie,28
+,Unnamed: 0,id,name,age
+0,0.0,1,John,25
+1,1.0,2,Jane,30
+2,2.0,3,Bob,22
+3,3.0,5,Eva,22
+4,4.0,7,Sophie,28

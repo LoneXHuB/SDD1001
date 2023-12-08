@@ -47,7 +47,7 @@ def add_client():
     #lire le fichier csv et y ajouter le nouveau client
     csv_data['clients'] = csv_data['clients'].append(new_client, ignore_index=True)
 
-    csv_data['clients'].to_csv('clients.csv')
+    csv_data['clients'].to_csv('clients.csv', index=False)
 
     return jsonify({'message': "Row added successfully!"})
 
